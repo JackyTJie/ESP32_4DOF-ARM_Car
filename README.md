@@ -1,6 +1,17 @@
-# 第 16 届上海交通大学"黎明杯"新生机械创意大赛 - 机器人项目
+# 第 16 届上海交通大学"黎明杯"新生机械创意大赛
 > 主题：工道肇始，百卅同途 | 队名: Blitz
-> 比赛结果：**十六强**
+> 比赛结果：**十六强** **最佳设计奖**
+
+<p align="center">
+  <img src="img/cover.jpg" alt="Cover" width="600"/><br/>
+  <em>比赛用麦卡纳姆轮全向移动机器人总览</em>
+</p>
+
+<p align="center">
+  <img src="img/Left_view.jpg" alt="Left View" width="400"/>
+  <img src="img/Top_down_view.jpg" alt="Top Down View" width="400"/><br/>
+  <em>左视图 · 俯视图</em>
+</p>
 
 ---
 
@@ -33,15 +44,15 @@
 | 4. 参数扰行 | 从墙面取障碍物并布置 | 机械臂/夹爪 | **已完成** |
 | 5. 同途归一 | 收集拼图并嵌入拼图板 | 机械臂/精密夹爪 | **已完成** |
 
-### 核心功能（已全部实现）
-- ✅ 麦卡纳姆轮全向移动（前后/平移/旋转/混合）
-- ✅ **MPU6050六轴传感器·智能坡道自动驻车**（倾角>12°+摇杆回中自动锁轮）
-- ✅ Xbox Series X/S 蓝牙无线控制
-- ✅ 4路舵机精准控制+一键复位
-- ✅ 步进电机升降加减速控制
-- ✅ 电池低压告警+临界电压强制停机
-- ✅ 编码器速度采集+三阶滑动滤波
-- ✅ 非线性速度曲线，操控更细腻
+### 核心功能
+-  麦卡纳姆轮全向移动（前后/平移/旋转/混合）
+-  **MPU6050六轴传感器·智能坡道自动驻车**（倾角>12°+摇杆回中自动锁轮）
+-  Xbox Series X/S 蓝牙无线控制
+-  4路舵机精准控制+一键复位
+-  步进电机升降加减速控制
+-  电池低压告警+临界电压强制停机
+-  编码器速度采集+三阶滑动滤波
+-  非线性速度曲线，操控更细腻
 
 ---
 
@@ -111,4 +122,20 @@ pio device monitor
 
 ---
 
-**最后更新**: 2026-05-23
+## 致谢
+
+本项目参考了以下开源项目，在此表示衷心感谢：
+
+| 项目 | 用途 |
+|------|------|
+| [LiZhiY0u/ESP32_connect_XboxController](https://github.com/LiZhiY0u/ESP32_connect_XboxController) | Xbox 手柄 ESP32 蓝牙连接参考 |
+| [asukiaaa/arduino-XboxSeriesXControllerESP32](https://github.com/asukiaaa/arduino-XboxSeriesXControllerESP32) | Xbox Series X/S 控制器 ESP32 驱动库 |
+| [asukiaaa/arduino-XboxSeriesXHIDReportBuilder](https://github.com/asukiaaa/arduino-XboxSeriesXHIDReportBuilder) | Xbox Series X HID 报告构建器 |
+| [asukiaaa/arduino-XboxControllerNotificationParser](https://github.com/asukiaaa/arduino-XboxControllerNotificationParser) | Xbox 控制器通知解析器 |
+| [A-lexisL/esp32_car](https://github.com/A-lexisL/esp32_car) | 提供部分灵感 |
+
+感谢所有开源社区贡献者的无私分享！
+
+---
+
+**最后更新**: 2026-06-26
